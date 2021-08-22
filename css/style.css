@@ -1,0 +1,54 @@
+body {
+  font-family: "Russo One";
+  width: 834px;
+  margin: auto; }
+  body * {
+    margin: 0;
+    padding: 0; }
+  body header {
+    background-color: #000;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #fff;
+    height: 75px;
+    padding: 25px 14px; }
+    body header h1 {
+      font-size: 24px;
+      font-weight: normal;
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
+    body header nav {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      margin-left: 32px; }
+      body header nav a {
+        display: inline-block;
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: normal; }
+      body header nav .a_left {
+        margin-right: 10px; }
+    body header div.line {
+      background-color: #fff;
+      width: 171px;
+      height: 3px; }
+    body header p {
+      margin: 4px;
+      font-size: 10px; }
+    body header div.head_inst {
+      -webkit-box-flex: 2;
+      -ms-flex: 2;
+      flex: 2; }
+      body header div.head_inst div.instagram {
+        width: 16px;
+        height: 16px;
+        margin: 0 9px 0 377px; }
+        body header div.head_inst div.instagram img {
+          width: 100%;
+          background-color: #fff; }
