@@ -6,27 +6,87 @@ function clickTelegramm(){
 	let contactTelegramm = document.getElementById("contTelegramm");
 	contactTelegramm.style.display = "none";
 }
-let firstarray = document.getElementById("firstarray");
 
-function firstarrayMuve(){
-	if(firstarray.style.marginTop = "239px"){
-		firstarray.style.position = "relative";
-	}
-}
-firstarrayMuve();
 
-// window.addEventListener('scroll', function() {
-// 	document.getElementById('showScroll').innerHTML = pageYOffset + 'px';
-// 	let firstarray = document.getElementById("firstarray");
-// 	firstarray.style.marginTop = "239px";
-// 	let smallarr = document.getElementById("smallarr");
-// 	smallarr.style.marginTop = "239px";
+
+$(document).ready(function() {
+
+	let element = $(".blackstr");
+	let height_el = element.offset().top;
+	let element_stop = $(".sectired");
+	let height_el_stop = element_stop.offset().top;
 	
-// });
-// window.addEventListener('scroll', function() {
-// 	document.getElementById('showScroll').innerHTML = pageYOffset + 'px';
+	$(".blackD").css({
+		"width": element.outerWidth(),
+		"height": element.outerHeight()
+	});
 	
-// 	let smallarr = document.getElementById("smallarr");
-// 	smallarr.style.marginTop = "239px";
+	$(window).scroll(function() {
+		
+		if($(window).scrollTop() > height_el_stop - element.outerHeight() - 20) {
+			
+			element.css({
+				"top": element.offset().top,
+				"left": element.offset().left
+			}).removeClass("fixed").addClass("absolute");
+		
+		} else {
+
+			if($(window).scrollTop() > height_el) {
+				
+				element.addClass("fixed").removeClass("absolute").attr("style", "");
+			
+			} else {
+				
+				element.removeClass("fixed absolute").attr("style", "");
+			
+			}
+			
+		}
+
+	});
+
+});
+
+
+
+
+$(document).ready(function() {
+
+	let element = $(".blackar");
+	let height_el = element.offset().top;
+	let element_stop = $(".gray");
+	let height_el_stop = element_stop.offset().top;
 	
-// });
+	$(".blackard").css({
+		"width": element.outerWidth(),
+		"height": element.outerHeight()
+	});
+	
+	$(window).scroll(function() {
+		
+		if($(window).scrollTop() > height_el_stop - element.outerHeight() - 20) {
+			
+			element.css({
+				"top": element.offset().top,
+				"left": element.offset().left
+			}).removeClass("fixedr").addClass("absoluter");
+		
+		} else {
+
+			if($(window).scrollTop() > height_el) {
+				
+				element.addClass("fixedr").removeClass("absoluter").attr("style", "");
+			
+			} else {
+				
+				element.removeClass("fixedr absoluter").attr("style", "");
+			
+			}
+			
+		}
+
+	});
+
+});
+

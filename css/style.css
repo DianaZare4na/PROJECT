@@ -113,18 +113,17 @@ body {
           width: 100%; }
       body article main.firstmain .textman {
         width: 246px; }
-      body article main.firstmain .blackstr {
-        position: fixed;
+      body article main.firstmain .blackd {
         -ms-flex-preferred-size: 6%;
         flex-basis: 6%; }
-        body article main.firstmain .blackstr .stlong {
+        body article main.firstmain .blackd .blackstr .stlong {
           margin-left: 14px;
           background-color: #000;
           width: 3px;
           height: 440px;
           z-index: 10;
           position: relative; }
-          body article main.firstmain .blackstr .stlong .down {
+          body article main.firstmain .blackd .blackstr .stlong .down {
             border: solid black;
             border-width: 0 3px 3px 0;
             border-radius: 2px;
@@ -215,30 +214,29 @@ body {
         body article main.secondmain .yellodiv .p {
           font-size: 13px;
           padding: 8px; }
-    body article .three {
-      height: 100vh; }
-      body article .three .blackar {
-        position: relative;
-        margin: 10px 0 0 307px; }
-        body article .three .blackar .arlong {
-          background-color: #000;
-          width: 3px;
-          height: 110px;
-          z-index: 10;
-          margin-top: 50px; }
-        body article .three .blackar .ardown {
-          border: solid black;
-          border-width: 0 3px 3px 0;
-          border-radius: 2px;
-          left: -7px;
-          bottom: 2px;
-          display: inline-block;
-          padding: 7px;
-          position: absolute;
-          -webkit-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
-          transform: rotate(45deg); }
-      body article .three .gray {
+    body article .three .blackard .blackar .arlong {
+      margin: 10px 0 0 307px;
+      background-color: #000;
+      width: 3px;
+      height: 110px;
+      z-index: 10;
+      margin-top: 50px;
+      position: relative; }
+    body article .three .blackard .blackar .ardown {
+      border: solid black;
+      border-width: 0 3px 3px 0;
+      border-radius: 2px;
+      left: -7px;
+      bottom: 2px;
+      display: inline-block;
+      padding: 7px;
+      position: absolute;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    body article .three .grdiv {
+      padding: 100px 0; }
+      body article .three .grdiv .gray {
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
         width: 326px;
@@ -246,24 +244,24 @@ body {
         background-color: #EBF2BF;
         padding: 9px;
         margin-left: 147px;
-        margin-top: 270px;
+        margin-top: 90px;
         font-size: 14px; }
-        body article .three .gray .footflex {
+        body article .three .grdiv .gray .footflex {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex; }
-          body article .three .gray .footflex .smallar {
+          body article .three .grdiv .gray .footflex .smallar {
             position: relative;
             margin-top: 24px;
             -webkit-box-flex: 1;
             -ms-flex: 1;
             flex: 1; }
-            body article .three .gray .footflex .smallar .arrsm {
+            body article .three .grdiv .gray .footflex .smallar .arrsm {
               background-color: #000;
               width: 33px;
               height: 3px;
               z-index: 10; }
-            body article .three .gray .footflex .smallar .ardownsm {
+            body article .three .grdiv .gray .footflex .smallar .ardownsm {
               border: solid black;
               border-width: 0 3px 3px 0;
               border-radius: 2px;
@@ -275,12 +273,12 @@ body {
               -webkit-transform: rotate(320deg);
               -ms-transform: rotate(320deg);
               transform: rotate(320deg); }
-          body article .three .gray .footflex .buecurse {
+          body article .three .grdiv .gray .footflex .buecurse {
             margin: 20px;
             -webkit-box-flex: 2;
             -ms-flex: 2;
             flex: 2; }
-            body article .three .gray .footflex .buecurse a {
+            body article .three .grdiv .gray .footflex .buecurse a {
               text-decoration: none;
               color: #000;
               width: 88px;
@@ -288,3 +286,21 @@ body {
               background-color: #F4FF72;
               text-align: center;
               font-size: 14px; }
+
+.fixed {
+  position: fixed;
+  z-index: 99;
+  top: 0; }
+
+.absolute {
+  position: absolute;
+  z-index: 99; }
+
+.fixedr {
+  position: fixed;
+  z-index: 199;
+  top: 0; }
+
+.absoluter {
+  position: absolute;
+  z-index: 199; }
