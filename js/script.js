@@ -55,7 +55,7 @@ $(document).ready(function() {
 
 	let element = $(".blackar");
 	let height_el = element.offset().top;
-	let element_stop = $(".gray");
+	let element_stop = $(".grdiv");
 	let height_el_stop = element_stop.offset().top;
 	
 	$(".blackard").css({
