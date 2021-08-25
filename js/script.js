@@ -13,7 +13,7 @@ $(document).ready(function() {
 
 	let element = $(".blackstr");
 	let height_el = element.offset().top;
-	let element_stop = $(".sectired");
+	let element_stop = $(".secondmain");
 	let height_el_stop = element_stop.offset().top;
 	
 	$(".blackD").css({

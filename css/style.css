@@ -143,7 +143,8 @@ body {
       display: flex;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+      padding: 20px 0; }
       body article main.secondmain .sectired .tired {
         background-color: #F2F2F2;
         width: 403px;
@@ -191,7 +192,7 @@ body {
         font-size: 13px;
         padding: 8px; }
     body article .three {
-      height: 1700px; }
+      height: 1000px; }
       body article .three .blackard .blackar .arlong {
         margin: 0 0 0 307px;
         height: 110px;
